@@ -17,6 +17,7 @@ t_scale = 2
 tau = 12/t_scale #one year
 #calculating first value of eta1
 f_ann = 0.02
+# f_ann = 0.02
 f_ran = 0.2
 day_dim = 1/30
 mu_ann = 0.2
