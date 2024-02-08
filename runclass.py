@@ -181,7 +181,7 @@ def Task_Bb(endtime = 5*41, nt = 5*41*30):
         mu = mu_list[i]
         sim = ENSO_ROM(T_init, h_init, nt, endtime, mu_0 = mu_list[i])
         periods[i], stds[i] = calc_period(sim.h_ts, endtime/nt, allT = False)
-    fig, axs = plt.subplots(1, 3, figsize = (10, 1.5))
+    fig, axs = plt.subplots(1, 3, figsize = (10, 2))
     for ax in [axs[0], axs[2]]:
         ax.axis('off')
     ax = axs[1]
